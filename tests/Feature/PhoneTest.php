@@ -8,12 +8,8 @@ use Tests\TestCase;
 
 class PhoneTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function test_example()
+    /** @test */
+    public function should_list_phone_numbers()
     {
         $response = $this->get('/');
 
