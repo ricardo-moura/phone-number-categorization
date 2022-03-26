@@ -1,4 +1,4 @@
-# Phone Number Categorization SPA
+# Phone Number Categorization
 
 ## Overview
 Single page application to list and categorize country phone numbers.
