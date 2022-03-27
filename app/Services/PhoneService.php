@@ -17,14 +17,18 @@ class PhoneService
     {
         $phones = $this->repository->getAll();
 
+        // return $phones;
+
+        // echo '<pre>';
         foreach($phones as $phone) {
+            $phone->country = PhoneInformation::getCountry($phone->phone);
+            // echo $phone->phone ."\n";
             // $dt->country = "nigeria";
             // $dt->state = "ok";
             // $dt->countryCode = "ok";
             // $dt->phoneNumber = $dt->phone;
         }
 
-        // return $data;
-        // return $this->repository->getAll();
+        return $phones;
     }
 }
