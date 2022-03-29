@@ -21,7 +21,14 @@ class PhoneService
 
         // echo '<pre>';
         foreach($phones as $phone) {
-            $phone->country = PhoneInformation::getCountry($phone->phone);
+            $auxiliaryData = PhoneInformation::getInformation($phone->phone);
+            $phone->countryName = $auxiliaryData->countryName;
+            $phone->state = $auxiliaryData->state;
+            $phone->countryCode = $auxiliaryData->countryCode;
+            unset($phone->phone);
+            // unset();
+            // dd($phone);
+            // $phone->country = PhoneInformation::getCountry($phone->phone);
             // echo $phone->phone ."\n";
             // $dt->country = "nigeria";
             // $dt->state = "ok";
