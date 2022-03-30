@@ -13,10 +13,18 @@ class PhoneTest extends TestCase
     {
         $response = $this->get('/api/phones');
         $response->assertStatus(200);
-        $response->assertJson($this->getCustomerPhoneList());
+        $response->assertJson($this->getAllPhones());
     }
 
-    private function getCustomerPhoneList(): array
+    /** @test */
+    public function it_should_be_able_to_list_phone_numbers_by_country_name(): void
+    {
+        $response = $this->get('/api/phones?country=Mozambique');
+        $response->assertStatus(200);
+        $response->assertJson($this->getPhonesByCountry());
+    }
+
+    private function getAllPhones(): array
     {
         return [
             'status' => 200,
@@ -307,6 +315,63 @@ class PhoneTest extends TestCase
                     'state' => 'OK',
                     'countryCode' => '+237',
                     'phoneNumber' => '699209115',
+                ],
+            ],
+        ];
+    }
+    private function getPhonesByCountry(): array
+    {
+        return [
+            'status' => 200,
+            'data' => [
+                8 => [
+                    'id' => 8,
+                    'countryName' => 'Mozambique',
+                    'state' => 'OK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '846565883',
+                ],
+                9 => [
+                    'id' => 9,
+                    'countryName' => 'Mozambique',
+                    'state' => 'OK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '849181828',
+                ],
+                10 => [
+                    'id' => 10,
+                    'countryName' => 'Mozambique',
+                    'state' => 'NOK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '84330678235',
+                ],
+                11 => [
+                    'id' => 11,
+                    'countryName' => 'Mozambique',
+                    'state' => 'OK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '847602609',
+                ],
+                12 => [
+                    'id' => 12,
+                    'countryName' => 'Mozambique',
+                    'state' => 'NOK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '042423566',
+                ],
+                13 => [
+                    'id' => 13,
+                    'countryName' => 'Mozambique',
+                    'state' => 'OK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '823747618',
+                ],
+                14 => [
+                    'id' => 14,
+                    'countryName' => 'Mozambique',
+                    'state' => 'OK',
+                    'countryCode' => '+258',
+                    'phoneNumber' => '848826725',
                 ],
             ],
         ];
