@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('/phone-numbers')->group(function () {
+Route::prefix('/phones')->group(function () {
     Route::get('/', [PhoneController::class, 'list']);
 });
