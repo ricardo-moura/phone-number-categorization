@@ -32,6 +32,14 @@ class PhoneTest extends TestCase
         $response->assertJson($this->getPhonesByState());
     }
 
+    /** @test */
+    public function it_should_be_able_to_list_phone_numbers_by_country_and_state(): void
+    {
+        $response = $this->get('/api/phones?country=Mozambique&state=NOK');
+        $response->assertStatus(200);
+        $response->assertJson($this->getPhonesByCountryAndState());
+    }
+
     private function getAllPhones(): array
     {
         return [
@@ -431,6 +439,29 @@ class PhoneTest extends TestCase
                     'state' =>  'NOK',
                     'countryCode' =>  '+237',
                     'phoneNumber' =>  '6A0311634'
+                ],
+            ],
+        ];
+    }
+
+    private function getPhonesByCountryAndState(): array
+    {
+        return [
+            'status' => 200,
+            'data' =>  [
+                10 => [
+                    'id' =>  10,
+                    'countryName' =>  'Mozambique',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+258',
+                    'phoneNumber' =>  '84330678235'
+                ],
+                12 => [
+                    'id' =>  12,
+                    'countryName' =>  'Mozambique',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+258',
+                    'phoneNumber' =>  '042423566'
                 ],
             ],
         ];
