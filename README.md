@@ -9,8 +9,8 @@ Single page application to list and categorize country phone numbers.
 
 ## Installation:
 1. Install [docker and docker-compose](https://docs.docker.com/get-docker/);
-2. I'm using [Laravel Sail](https://laravel.com/docs/9.x/sail), for this reason run the following commands:
-    - ```
+2. I'm using [Laravel Sail](https://laravel.com/docs/9.x/sail), for this reason, execute the following commands in your terminal:
+    - ```bash
         docker run --rm \
             -u "$(id -u):$(id -g)" \
             -v $(pwd):/var/www/html \
@@ -19,3 +19,9 @@ Single page application to list and categorize country phone numbers.
             composer install --ignore-platform-reqs
       ```
         Note: More information about the command above could be found here: https://laravel.com/docs/9.x/sail#executing-composer-commands
+    - ```bash
+      alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+      ```
+    - ```bash
+      sail up
+      ```
