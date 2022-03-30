@@ -24,6 +24,14 @@ class PhoneTest extends TestCase
         $response->assertJson($this->getPhonesByCountry());
     }
 
+    /** @test */
+    public function it_should_be_able_to_list_phone_numbers_by_state(): void
+    {
+        $response = $this->get('/api/phones?state=NOK');
+        $response->assertStatus(200);
+        $response->assertJson($this->getPhonesByState());
+    }
+
     private function getAllPhones(): array
     {
         return [
@@ -372,6 +380,57 @@ class PhoneTest extends TestCase
                     'state' => 'OK',
                     'countryCode' => '+258',
                     'phoneNumber' => '848826725',
+                ],
+            ],
+        ];
+    }
+
+    private function getPhonesByState(): array
+    {
+        return [
+            'status' => 200,
+            'data' =>  [
+                0 =>  [
+                    'id' =>  0,
+                    'countryName' =>  'Morocco',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+212',
+                    'phoneNumber' =>  '6007989253'
+                ],
+                10 =>  [
+                    'id' =>  10,
+                    'countryName' =>  'Mozambique',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+258',
+                    'phoneNumber' =>  '84330678235'
+                ],
+                12 =>  [
+                    'id' =>  12,
+                    'countryName' =>  'Mozambique',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+258',
+                    'phoneNumber' =>  '042423566'
+                ],
+                16 =>  [
+                    'id' =>  16,
+                    'countryName' =>  'Uganda',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+256',
+                    'phoneNumber' =>  '7503O6263'
+                ],
+                22 =>  [
+                    'id' =>  22,
+                    'countryName' =>  'Ethiopia',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+251',
+                    'phoneNumber' =>  '9773199405'
+                ],
+                33 =>  [
+                    'id' =>  33,
+                    'countryName' =>  'Cameroon',
+                    'state' =>  'NOK',
+                    'countryCode' =>  '+237',
+                    'phoneNumber' =>  '6A0311634'
                 ],
             ],
         ];
