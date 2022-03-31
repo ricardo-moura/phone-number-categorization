@@ -23,6 +23,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12">
+                <h1 class="mb-4">Phone numbers</h1>
                 <table id="example" class="display" style="width:100%">
                     <thead>
                         <tr>
@@ -49,13 +50,6 @@
 </body>
 <script>
     $(document).ready(function() {
-        // Setup - add a text input to each footer cell
-        // $('#example tfoot th').each(function() {
-        //     var title = $(this).text();
-        //     $(this).html('<input type="text" placeholder="Search ' + title + '" />');
-        // });
-
-        // DataTable
         var table = $('#example').DataTable({
             "ajax": 'http://localhost:8081/api/phones',
             "columns": [{
@@ -90,20 +84,6 @@
                     });
                 });
             }
-            // Apply the search
-            // console.log(this.api());
-            // this.api().columns().every(function() {
-            //     var that = this;
-
-            //     $('input', this.footer()).on('keyup change clear', function() {
-            //         if (that.search() !== this.value) {
-            //             that
-            //                 .search(this.value)
-            //                 .draw();
-            //         }
-            //     });
-            // });
-            // }
         });
     });
 </script>
