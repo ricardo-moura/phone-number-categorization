@@ -32,14 +32,13 @@ This database has only a table named `customer`:
 │   │   └── PhoneListService.php #Get, format and return phone numbers to the PhoneController.
 │   │   └── Phone.php #Get specific data from phone numbers.
 │   │   └── Countries
-│   │       └── Countries
-│   │           └── CountryInformation.php #Get specific data from the country.
-│   │           └── CountriesInterface.php #An interface that provides a default method to validate phone number.
-│   │           └── Cameroon.php #Validate phone number from country "Cameroon".
-│   │           └── Ethiopia.php #Validate phone number from country "Ethiopia".
-│   │           └── Morocco.php #Validate phone number from country "Morocco".
-│   │           └── Mozambique.php #Validate phone number from country "Mozambique".
-│   │           └── Uganda.php #Validate phone number from country "Uganda".
+│   │       └── CountryInformation.php #Get specific data from the country.
+│   │       └── CountriesInterface.php #An interface that provides a default method to validate phone number.
+│   │       └── Cameroon.php #Validate phone number from country "Cameroon".
+│   │       └── Ethiopia.php #Validate phone number from country "Ethiopia".
+│   │       └── Morocco.php #Validate phone number from country "Morocco".
+│   │       └── Mozambique.php #Validate phone number from country "Mozambique".
+│   │       └── Uganda.php #Validate phone number from country "Uganda".
 │   └── Models #Application models.
 ├── database
 │   └── sample.db #SQLite database with customer data.

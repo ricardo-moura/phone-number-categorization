@@ -57,6 +57,10 @@ class Phone
 
         $validatorFqn = sprintf('App\Services\Countries\%s', $countryName);
 
+        if (class_exists($validatorFqn) === false) {
+            return $invalidPhone;
+        }
+
         if ($validatorFqn::isValidNumber($phoneWithoutCountryCode) === true) {
             return $validPhone;
         }

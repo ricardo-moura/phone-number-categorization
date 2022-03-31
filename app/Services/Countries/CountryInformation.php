@@ -5,7 +5,6 @@ namespace App\Services\Countries;
 class CountryInformation
 {
     public const INVALID_CONTRY_CODE = 'Invalid country code';
-
     public const INVALID_COUNTRY_NAME = 'Invalid country name';
 
     public function getCountries(): array
@@ -37,7 +36,7 @@ class CountryInformation
 
     public function getCountryNameByCountryCode(string $countryCode): string
     {
-        if ($countryCode === 'Invalid country code') {
+        if ($countryCode === self::INVALID_CONTRY_CODE) {
             return self::INVALID_COUNTRY_NAME;
         }
 
