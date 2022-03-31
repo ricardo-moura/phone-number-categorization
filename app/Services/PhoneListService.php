@@ -9,10 +9,7 @@ class PhoneListService
 {
     private $repository;
 
-    public function __construct(
-        Repository $repository,
-        Phone $phone,
-    )
+    public function __construct(Repository $repository, Phone $phone)
     {
         $this->repository = $repository;
         $this->phone = $phone;
