@@ -2,7 +2,7 @@
 
 namespace App\Services\Countries;
 
-class Cameroon
+class Cameroon implements CountriesInterface
 {
     public static function isValidNumber(string $phoneNumber): bool
     {

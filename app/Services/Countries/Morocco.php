@@ -2,7 +2,7 @@
 
 namespace App\Services\Countries;
 
-class Morocco
+class Morocco implements CountriesInterface
 {
     public static function isValidNumber(string $phoneNumber): bool
     {

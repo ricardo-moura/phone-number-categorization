@@ -2,7 +2,7 @@
 
 namespace App\Services\Countries;
 
-class Ethiopia
+class Ethiopia implements CountriesInterface
 {
     public static function isValidNumber(string $phoneNumber): bool
     {

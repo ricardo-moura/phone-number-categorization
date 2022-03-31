@@ -2,7 +2,7 @@
 
 namespace App\Services\Countries;
 
-class Uganda
+class Uganda implements CountriesInterface
 {
     public static function isValidNumber(string $phoneNumber): bool
     {
