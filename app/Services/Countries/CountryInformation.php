@@ -2,7 +2,7 @@
 
 namespace App\Services\Countries;
 
-class Countries
+class CountryInformation
 {
     public const INVALID_CONTRY_CODE = 'Invalid country code';
 

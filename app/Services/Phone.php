@@ -2,30 +2,30 @@
 
 namespace App\Services;
 
-use App\Services\Countries\Countries;
+use App\Services\Countries\CountryInformation;
 
 class Phone
 {
-    private $countries;
+    private $countryInformation;
 
     private const AVAILABLE_STATUS = [
         'OK',
         'NOK',
     ];
 
-    public function __construct(Countries $countries)
+    public function __construct(CountryInformation $countryInformation)
     {
-        $this->countries = $countries;
+        $this->countryInformation = $countryInformation;
     }
 
     public function getCountryCode(string $phone): string
     {
-        return $this->countries->getCountryCode($phone);
+        return $this->countryInformation->getCountryCode($phone);
     }
 
     public function getCountryName(string $countryCode): string
     {
-        return $this->countries->getCountryNameByCountryCode($countryCode);
+        return $this->countryInformation->getCountryNameByCountryCode($countryCode);
     }
 
     public function getNumber(string $phone): string
@@ -47,7 +47,7 @@ class Phone
     {
         [$validPhone, $invalidPhone] = self::AVAILABLE_STATUS;
 
-        $countries = $this->countries;
+        $countries = $this->countryInformation;
 
         if ($countryCode === $countries::INVALID_CONTRY_CODE || $countryName === $countries::INVALID_COUNTRY_NAME) {
             return $invalidPhone;
