@@ -1,0 +1,292 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "id": 0,
+            "countryName": "Morocco",
+            "state": "NOK",
+            "countryCode": "212",
+            "phoneNumber": "6007989253"
+        },
+        {
+            "id": 1,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "698054317"
+        },
+        {
+            "id": 2,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "6546545369"
+        },
+        {
+            "id": 3,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "6617344445"
+        },
+        {
+            "id": 4,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "691933626"
+        },
+        {
+            "id": 5,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "633963130"
+        },
+        {
+            "id": 6,
+            "countryName": "Morocco",
+            "state": "OK",
+            "countryCode": "212",
+            "phoneNumber": "654642448"
+        },
+        {
+            "id": 7,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "847651504"
+        },
+        {
+            "id": 8,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "846565883"
+        },
+        {
+            "id": 9,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "849181828"
+        },
+        {
+            "id": 10,
+            "countryName": "Mozambique",
+            "state": "NOK",
+            "countryCode": "258",
+            "phoneNumber": "84330678235"
+        },
+        {
+            "id": 11,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "847602609"
+        },
+        {
+            "id": 12,
+            "countryName": "Mozambique",
+            "state": "NOK",
+            "countryCode": "258",
+            "phoneNumber": "042423566"
+        },
+        {
+            "id": 13,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "823747618"
+        },
+        {
+            "id": 14,
+            "countryName": "Mozambique",
+            "state": "OK",
+            "countryCode": "258",
+            "phoneNumber": "848826725"
+        },
+        {
+            "id": 15,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "775069443"
+        },
+        {
+            "id": 16,
+            "countryName": "Uganda",
+            "state": "NOK",
+            "countryCode": "256",
+            "phoneNumber": "7503O6263"
+        },
+        {
+            "id": 17,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "704244430"
+        },
+        {
+            "id": 18,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "7734127498"
+        },
+        {
+            "id": 19,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "7771031454"
+        },
+        {
+            "id": 20,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "3142345678"
+        },
+        {
+            "id": 21,
+            "countryName": "Uganda",
+            "state": "OK",
+            "countryCode": "256",
+            "phoneNumber": "714660221"
+        },
+        {
+            "id": 22,
+            "countryName": "Ethiopia",
+            "state": "NOK",
+            "countryCode": "251",
+            "phoneNumber": "9773199405"
+        },
+        {
+            "id": 23,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "914701723"
+        },
+        {
+            "id": 24,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "911203317"
+        },
+        {
+            "id": 25,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "9119454961"
+        },
+        {
+            "id": 26,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "914148181"
+        },
+        {
+            "id": 27,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "966002259"
+        },
+        {
+            "id": 28,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "988200000"
+        },
+        {
+            "id": 29,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "924418461"
+        },
+        {
+            "id": 30,
+            "countryName": "Ethiopia",
+            "state": "OK",
+            "countryCode": "251",
+            "phoneNumber": "911168450"
+        },
+        {
+            "id": 31,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "697151594"
+        },
+        {
+            "id": 32,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "677046616"
+        },
+        {
+            "id": 33,
+            "countryName": "Cameroon",
+            "state": "NOK",
+            "countryCode": "237",
+            "phoneNumber": "6A0311634"
+        },
+        {
+            "id": 34,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "673122155"
+        },
+        {
+            "id": 35,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "695539786"
+        },
+        {
+            "id": 36,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "6780009592"
+        },
+        {
+            "id": 37,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "6622284920"
+        },
+        {
+            "id": 38,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "696443597"
+        },
+        {
+            "id": 39,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "691816558"
+        },
+        {
+            "id": 40,
+            "countryName": "Cameroon",
+            "state": "OK",
+            "countryCode": "237",
+            "phoneNumber": "699209115"
+        }
+    ]
+}

@@ -40,6 +40,9 @@ This database has only a table named `customer`:
 │   │       └── Mozambique.php #Validate phone number from country "Mozambique".
 │   │       └── Uganda.php #Validate phone number from country "Uganda".
 │   └── Models #Application models.
+├── docs
+│   └── examples
+│       └── phone_numbers.json #JSON file fetched from http://localhost:8081/api/phones.
 ├── database
 │   └── sample.db #SQLite database with customer data.
 ├── resources
