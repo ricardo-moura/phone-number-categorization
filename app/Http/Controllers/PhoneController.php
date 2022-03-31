@@ -2,25 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\PhoneService;
-use Illuminate\Http\Request;
+use App\Services\PhoneListService;
 use Exception;
-
+use Illuminate\Http\Request;
 
 class PhoneController extends Controller
 {
-    protected $phoneService;
+    protected $phoneListService;
 
-    public function __construct(PhoneService $phoneService)
+    public function __construct(PhoneListService $phoneListService)
     {
-        $this->phoneService = $phoneService;
+        $this->phoneListService = $phoneListService;
     }
 
     public function list(Request $request)
     {
         try {
             $result = ['status' => 200];
-            $result['data'] = $this->phoneService->getAll($request);
+            $result['data'] = $this->phoneListService->listAll($request);
         } catch (Exception $e) {
             $result = [
                 'status' => 500,
